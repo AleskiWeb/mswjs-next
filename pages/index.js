@@ -1,5 +1,9 @@
 import Head from 'next/head'
 
+import('../mocks').then(({ setupMocks }) => {
+    setupMocks();
+  });
+
 export default function Home() {
   return (
     <div className="container">
